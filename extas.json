@@ -1,0 +1,199 @@
+{
+  "name": "extas/bv",
+  "plugins": [
+    {
+      "class": "extas\\components\\plugins\\PluginInstallBVCategories",
+      "stage": "extas.install"
+    },
+    {
+      "class": "extas\\components\\plugins\\PluginInstallBVSubcategories",
+      "stage": "extas.install"
+    }
+  ],
+  "bv_categories": [
+    {
+      "name": "money",
+      "title": "Деньги",
+      "description": "Доходы и расходы",
+      "weight": 1
+    },
+    {
+      "name": "users_happiness",
+      "title": "Удовлетворённость пользователей",
+      "description": "О счастье конечных пользователей",
+      "weight": 1
+    },
+    {
+      "name": "users_amount",
+      "title": "Количество пользователей",
+      "description": "Приток и отток пользователей",
+      "weight": 1
+    },
+    {
+      "name": "tech",
+      "title": "Техническая сторона",
+      "description": "Техническая сторона бизнесс процессов",
+      "weight": 1
+    },
+    {
+      "name": "law",
+      "title": "Закон и обязательства",
+      "description": "Соблюдение законов и обязательств",
+      "weight": 1
+    },
+    {
+      "name": "strategic_plans",
+      "title": "Стратегические планы",
+      "description": "О долгосрочной перспективе",
+      "weight": 1
+    },
+    {
+      "name": "partner",
+      "title": "Партнёрство",
+      "description": "О партнёрах",
+      "weight": 1
+    }
+  ],
+  "bv_subcategories": [
+    {
+      "name": "more_buyers",
+      "title": "Больше покупателей",
+      "description": "Увеличить количество покупателей, т.е. тех, кто платит за использование системы",
+      "category_name": "money",
+      "weight": 1
+    },
+    {
+      "name": "more_products",
+      "title": "Больше товаров и услуг",
+      "description": "Продать больше товаров и услуг",
+      "category_name": "money",
+      "weight": 1
+    },
+    {
+      "name": "higher_price",
+      "title": "Выше цена",
+      "description": "Увеличить цену продукта",
+      "category_name": "money",
+      "weight": 1
+    },
+    {
+      "name": "too_hard_to_deny",
+      "title": "Отказаться дороже",
+      "description": "Не особо поможет, но сделать её дешевле, чем отказаться",
+      "category_name": "money",
+      "weight": 1
+    },
+    {
+      "name": "happiness",
+      "title": "Счастливее",
+      "description": "Избавить пользователей от боли, добавить новый необходимый пользователям функционал",
+      "category_name": "users_happiness",
+      "weight": 1
+    },
+    {
+      "name": "fans",
+      "title": "Фанаты",
+      "description": "Убедить прекратить использовать другие сервисы в пользу нашего",
+      "category_name": "users_happiness",
+      "weight": 1
+    },
+    {
+      "name": "education",
+      "title": "Обучение",
+      "description": "Проще и удобнее начинать работать с сервисом, либо использовать новый функционал",
+      "category_name": "users_happiness",
+      "weight": 1
+    },
+    {
+      "name": "hold_users",
+      "title": "Останься",
+      "description": "Уменьшить вероятность ухода пользователя",
+      "category_name": "users_amount",
+      "weight": 1
+    },
+    {
+      "name": "active_users",
+      "title": "Активные пользователи",
+      "description": "Получать больше удовольствия от использования системы, видеть больше причин использовать систему",
+      "category_name": "users_amount",
+      "weight": 1
+    },
+    {
+      "name": "fewer_bugs",
+      "title": "Меньше ошибок",
+      "description": "Уменьшить количество ошибок",
+      "category_name": "tech",
+      "weight": 1
+    },
+    {
+      "name": "deploy",
+      "title": "Разворачивание",
+      "description": "Ускорить разворачивание",
+      "category_name": "tech",
+      "weight": 1
+    },
+    {
+      "name": "new_development",
+      "title": "Разработка нового функционала",
+      "description": "Ускорить разработку, сделать её дешевле",
+      "category_name": "tech",
+      "weight": 1
+    },
+    {
+      "name": "support",
+      "title": "Поддержка",
+      "description": "Уменьшить стоимость поддержки",
+      "category_name": "tech",
+      "weight": 1
+    },
+    {
+      "name": "marketing",
+      "title": "Маркетинг",
+      "description": "Проверить гипотезы маркетинга",
+      "category_name": "tech",
+      "weight": 1
+    },
+    {
+      "name": "new_possibilities",
+      "title": "Новые возможности",
+      "description": "Сделать то, чего раньше не могли",
+      "category_name": "tech",
+      "weight": 1
+    },
+    {
+      "name": "promise",
+      "title": "Обещание",
+      "description": "Исполнить обещание, данное заказчику или ключевому клиенту",
+      "category_name": "law",
+      "weight": 1
+    },
+    {
+      "name": "law",
+      "title": "Закон",
+      "description": "Исполнить закон или нормативный акт",
+      "category_name": "law",
+      "weight": 1
+    },
+    {
+      "name": "align_with_plans",
+      "title": "Совпало",
+      "description": "Совпадает со стратегическими планами проекта/продукта/направления/компании",
+      "category_name": "strategic_plans",
+      "weight": 1
+    },
+    {
+      "name": "economy",
+      "title": "Экономия",
+      "description": "В будущем сэкономить",
+      "category_name": "strategic_plans",
+      "weight": 1
+    },
+    {
+      "name": "help",
+      "title": "Помощь",
+      "description": "Решить проблему наших партнёров",
+      "category_name": "partner",
+      "weight": 1
+    }
+  ]
+}
