@@ -1,5 +1,15 @@
 {
   "name": "extas/bv",
+  "package_classes": [
+    {
+      "interface": "extas\\interfaces\\bv\\ICategoryRepository",
+      "class": "extas\\components\\bv\\CategoryRepository"
+    },
+    {
+      "interface": "extas\\interfaces\\bv\\ISubcategoryRepository",
+      "class": "extas\\components\\bv\\SubcategoryRepository"
+    }
+  ],
   "plugins": [
     {
       "class": "extas\\components\\plugins\\PluginInstallBVCategories",
