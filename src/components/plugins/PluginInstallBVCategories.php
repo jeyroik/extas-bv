@@ -12,9 +12,9 @@ use extas\interfaces\bv\ICategoryRepository;
  */
 class PluginInstallBVCategories extends PluginInstallDefault
 {
-    protected $selfRepositoryClass = ICategoryRepository::class;
-    protected $selfUID = Category::FIELD__NAME;
-    protected $selfSection = 'bv_categories';
-    protected $selfName = 'business value category';
-    protected $selfItemClass = Category::class;
+    protected string $selfRepositoryClass = ICategoryRepository::class;
+    protected string $selfUID = Category::FIELD__NAME;
+    protected string $selfSection = 'bv_categories';
+    protected string $selfName = 'business value category';
+    protected string $selfItemClass = Category::class;
 }

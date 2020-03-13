@@ -9,7 +9,7 @@ namespace extas\interfaces;
  */
 interface IHasWeight
 {
-    const FIELD__WEIGHT = 'weight';
+    public const FIELD__WEIGHT = 'weight';
 
     /**
      * @return int

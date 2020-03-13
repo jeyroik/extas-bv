@@ -14,9 +14,9 @@ use extas\interfaces\IItem;
  */
 interface ISubcategory extends IItem, IHasName, IHasDescription, IHasWeight
 {
-    const SUBJECT = 'extas.bv.subcategory';
+    public const SUBJECT = 'extas.bv.subcategory';
 
-    const FIELD__CATEGORY_NAME = 'category_name';
+    public const FIELD__CATEGORY_NAME = 'category_name';
 
     /**
      * @return string

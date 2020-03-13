@@ -14,7 +14,7 @@ use extas\interfaces\IItem;
  */
 interface ICategory extends IItem, IHasName, IHasDescription, IHasWeight
 {
-    const SUBJECT = 'extas.bv.category';
+    public const SUBJECT = 'extas.bv.category';
 
     /**
      * @return ISubcategory[]

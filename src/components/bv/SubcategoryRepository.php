@@ -12,9 +12,9 @@ use extas\interfaces\bv\ISubcategoryRepository;
  */
 class SubcategoryRepository extends Repository implements ISubcategoryRepository
 {
-    protected $itemClass = Subcategory::class;
-    protected $name = 'bv_subcategories';
-    protected $pk = Subcategory::FIELD__NAME;
-    protected $scope = 'extas';
-    protected $idAs = '';
+    protected string $itemClass = Subcategory::class;
+    protected string $name = 'bv_subcategories';
+    protected string $pk = Subcategory::FIELD__NAME;
+    protected string $scope = 'extas';
+    protected string $idAs = '';
 }

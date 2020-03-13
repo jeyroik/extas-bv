@@ -12,9 +12,9 @@ use extas\interfaces\bv\ICategoryRepository;
  */
 class CategoryRepository extends Repository implements ICategoryRepository
 {
-    protected $idAs = '';
-    protected $scope = 'extas';
-    protected $pk = Category::FIELD__NAME;
-    protected $name = 'bv_categories';
-    protected $itemClass = Category::class;
+    protected string $idAs = '';
+    protected string $scope = 'extas';
+    protected string $pk = Category::FIELD__NAME;
+    protected string $name = 'bv_categories';
+    protected string $itemClass = Category::class;
 }

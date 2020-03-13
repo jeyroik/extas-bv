@@ -2,8 +2,8 @@
   "name": "jeyroik/extas-bv",
   "description": "Extas busyness value package",
   "require": {
-    "jeyroik/extas-base": "*",
-    "jeyroik/extas-installer": "*"
+    "jeyroik/extas-base": "1.*",
+    "jeyroik/extas-installer": "2.*"
   },
   "autoload": {
     "psr-4": {
