@@ -2,7 +2,7 @@
   "name": "jeyroik/extas-bv",
   "description": "Extas busyness value package",
   "require": {
-    "jeyroik/extas-base": "1.*",
+    "jeyroik/extas-base": "2.*",
     "jeyroik/extas-installer": "2.*"
   },
   "autoload": {
