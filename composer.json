@@ -3,7 +3,7 @@
   "description": "Extas busyness value package",
   "require": {
     "jeyroik/extas-base": "2.*",
-    "jeyroik/extas-installer": "2.*"
+    "jeyroik/extas-foundation": "5.*"
   },
   "autoload": {
     "psr-4": {

@@ -2,22 +2,39 @@
   "name": "extas/bv",
   "package_classes": [
     {
-      "interface": "extas\\interfaces\\bv\\ICategoryRepository",
+      "interface": "categoryRepository",
       "class": "extas\\components\\bv\\CategoryRepository"
     },
     {
-      "interface": "extas\\interfaces\\bv\\ISubcategoryRepository",
+      "interface": "subcategoryRepository",
       "class": "extas\\components\\bv\\SubcategoryRepository"
     }
   ],
   "plugins": [
     {
-      "class": "extas\\components\\plugins\\PluginInstallBVCategories",
-      "stage": "extas.install"
+      "class": "extas\\components\\plugins\\install\\InstallBVCategories",
+      "stage": "extas.install.section.bv_categories"
     },
     {
-      "class": "extas\\components\\plugins\\PluginInstallBVSubcategories",
-      "stage": "extas.install"
+      "class": "extas\\components\\plugins\\install\\InstallBVSubcategories",
+      "stage": "extas.install.section.bv_subcategories"
+    },
+    {
+      "class": "extas\\components\\plugins\\uninstall\\UninstallBVCategories",
+      "stage": "extas.install.section.bv_categories"
+    },
+    {
+      "class": "extas\\components\\plugins\\uninstall\\UninstallBVSubcategories",
+      "stage": "extas.install.section.bv_subcategories"
+    }
+  ],
+  "extensions": [
+    {
+      "class": "extas\\components\\extensions\\ExtensionRepositoryGet",
+      "interface": "extas\\interfaces\\extensions\\IExtensionRepositoryGet",
+      "subject": "*",
+      "methods": ["categoryRepository", "subcategoryRepository"],
+      "install_on": "initialization"
     }
   ],
   "bv_categories": [

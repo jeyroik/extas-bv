@@ -1,17 +1,19 @@
 <?php
 namespace extas\components\bv;
 
+use extas\interfaces\bv\ICategory;
+use extas\interfaces\bv\ISubcategory;
+use extas\interfaces\repositories\IRepository;
+
 use extas\components\Item;
-use extas\components\SystemContainer;
 use extas\components\THasDescription;
 use extas\components\THasName;
 use extas\components\THasWeight;
-use extas\interfaces\bv\ICategory;
-use extas\interfaces\bv\ICategoryRepository;
-use extas\interfaces\bv\ISubcategory;
 
 /**
  * Class Subcategory
+ *
+ * @method IRepository categoryRepository()
  *
  * @package extas\components\bv
  * @author jeyroik@gmail.com
@@ -35,12 +37,7 @@ class Subcategory extends Item implements ISubcategory
      */
     public function getCategory(): ?ICategory
     {
-        /**
-         * @var $catRepo ICategoryRepository
-         */
-        $catRepo = SystemContainer::getItem(ICategoryRepository::class);
-
-        return $catRepo->one([ICategory::FIELD__NAME => $this->getCategoryName()]);
+        return $this->categoryRepository()->one([ICategory::FIELD__NAME => $this->getCategoryName()]);
     }
 
     /**
